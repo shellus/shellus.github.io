@@ -18,6 +18,7 @@
         header {
             padding-top: 35px;
             padding-bottom: 25px;
+            text-align: center;
         }
 
         header h1 {
@@ -91,14 +92,12 @@
 
         #downloads {
             margin-bottom: 40px;
+            margin-top: 30px;
         }
 
         a.button {
-            display: block;
-            float: left;
-            width: 179px;
-            padding: 12px 8px 12px 8px;
-            margin-right: 14px;
+            display: inline-block;
+            padding: 12px 14px;
             font-size: 15px;
             font-weight: bold;
             line-height: 25px;
@@ -111,16 +110,9 @@
             background: -ms-linear-gradient(top, #fdfdfd 0%, #f2f2f2 100%);
             background: linear-gradient(top, #fdfdfd 0%, #f2f2f2 100%);
             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#f2f2f2', GradientType=0);
-            border-top: solid 1px #cbcbcb;
-            border-right: solid 1px #b7b7b7;
-            border-bottom: solid 1px #b3b3b3;
-            border-left: solid 1px #b7b7b7;
+            border: solid 1px #cbcbcb;
             border-radius: 30px;
-            -webkit-box-shadow: 10px 10px 5px #888;
-            -moz-box-shadow: 10px 10px 5px #888;
-            box-shadow: 0px 1px 5px #e8e8e8;
-            -moz-border-radius: 30px;
-            -webkit-border-radius: 30px;
+            box-shadow: 0 1px 5px #e8e8e8;
         }
 
         a.button:hover {
@@ -130,7 +122,7 @@
             background: -webkit-linear-gradient(top, #fdfdfd 0%, #f6f6f6 100%);
             background: -o-linear-gradient(top, #fdfdfd 0%, #f6f6f6 100%);
             background: -ms-linear-gradient(top, #fdfdfd 0%, #f6f6f6 100%);
-            background: linear-gradient(top, #fdfdfd 0%, #f6f6f6, 100%);
+            background: linear-gradient(top, #fdfdfd 0%, #f6f6f6 100%);
             filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fdfdfd', endColorstr='#f6f6f6', GradientType=0);
             border-top: solid 1px #b7b7b7;
             border-right: solid 1px #b3b3b3;
@@ -147,12 +139,8 @@
         a:hover {
             color: #c5000c;
         }
-
         a {
             text-decoration: none;
-        }
-
-        a {
             color: #0007d5;
         }
     </style>
@@ -165,33 +153,33 @@
         <header>
             <h1>葛佳祥的履历</h1>
             <p>PHP开发者 / 支持开源 / 嵌入式开发爱好者</p>
+
+            <section id="downloads" class="clearfix">
+                <a href="https://github.com/shellus" id="view-on-github" class="button">
+                    <span>View on GitHub</span>
+                </a>
+            </section>
+
         </header>
-
-        <section id="downloads" class="clearfix">
-            <a href="https://github.com/shellus" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
-
         <hr>
 
         <section id="main_content">
             <p>【关于我】</p>
             <ul>
-                <li>娃娃脾气，英文名shellus， 源自“shell US”。</li>
+                <li>葛佳祥，英文名shellus， 源自“shell US”，早期曾用网名“娃娃脾气”。</li>
             </ul>
             <ul>
-                <li><p>91年出生，未婚，在山东、河南、广东、福建等地工作过。性格内敛，表达、理解能力强。</p></li>
+                <li><p>91年出生，已婚，在山东、河南、广东、福建等地工作过。性格沉稳、内敛。</p></li>
                 <li>
-                    <p>
-                        四年Web开发：2013年于河南工作联合创办公司历时两年，2015年在深圳一家创业公司担任技术总监，
-                    </p>
+                    <p>2013年于河南联合创办公司历时两年，2015年在深圳一家创业公司担任技术总监，</p>
                 </li>
                 <li>
-                    <p>
-                        2016年底至今在马来西亚一家跨境电商担任PHP开发工作。仍然以互联网做为谋生的行业，仍然在不断学习以保持自己的竞争力，仍然在努力寻找自身价值。
-                    </p>
+                    <p>2016年至2018年在马来西亚一家跨境电商担任PHP开发工作。</p>
                 </li>
-                <li><p>拥护开源，专注技术，关注桌面应用开发、<br/>
-                    主要编程语言是PHP (Laravel)</p></li>
+                <li>
+                    <p>2018年至今在深圳一家家装公司担任技术总监</p>
+                </li>
+                <li><p>拥护开源，专注技术，关注跨平台客户端开发、主要编程语言是PHP (Laravel)</p></li>
                 <li><p>热爱编程，总会有新奇的想法，总会试图去实现。</p></li>
             </ul>
             <p>【我的能力】</p>
@@ -203,48 +191,27 @@
                 <li>MySQL：日常使用的数据库，能设计优雅简洁符合范式的数据库结构，合理的索引，性能分析和调优。</li>
             </ul>
             <ul>
-                <li>内存数据库：使用过<a href="http://redis.io/">Redis</a></li>
+                <li>WEB前端：用过<a href="https://github.com/angular/angular">AngularJS</a>, 写过jQuery插件，近年来主要用<a href="https://cn.vuejs.org/index.html">Vue.js</a></li>
             </ul>
             <ul>
-                <li>WEB前端：用过<a href="https://github.com/angular/angular">AngularJS</a>, 熟练使用jQuery，写过jQuery插件，不过近年来很少写前端了</li>
+                <li>Linux：日常使用<a href="https://www.ubuntu.com/">Ubuntu</a>，喜欢 Docker</li>
             </ul>
             <ul>
-                <li>Linux：日常使用<a href="https://www.ubuntu.com/">Ubuntu</a>，喜欢用 apt ，讨厌自己编译，喜欢使用一键脚本</li>
+                <li>物联网：使用过esp8266 Wifi模块，使用<a href="https://github.com/esp8266/Arduino">Arduino</a>进行编程，控制各类传感器，控制器做过一些有趣的应用</li>
             </ul>
             <ul>
-                <li>物联网：使用过esp8266 Wifi模块，使用<a href="https://github.com/esp8266/Arduino">Arduino</a>进行编程，控制各类传感器，控制器做过一些有趣的应用
-                </li>
+                <li>直播技术：了解常见的视频点播、RTMP、hls直播技术，熟悉ffmpeg。</li>
             </ul>
             <ul>
-                <li>直播技术：了解常见的视频点播、RTMP、hls直播技术，偶尔使用ffmpeg转码。
-                </li>
-            </ul>
-            <ul>
-                <li>网络精通：对（穿透）防火墙技术有丰富的操作经验。并熟练使用ping、traceroute、nmap等工具测试和扫描。
-                </li>
+                <li>网络精通：对防火墙和NAT技术有丰富的经验。熟练使用ip-route、nmap等工具。</li>
             </ul>
             <p>【联系】<br/>
             </p>
             <div style="padding-left: 2em;">
-                QQ：353358601<br/>
-                Email：shellus@endaosi.com
+                Email：<a href="mailto:shellus@endaosi.com">shellus@endaosi.com</a>
+                <br>
+                博客：<a href="https://blog.endaosi.com/">娃娃脾气的博客</a>
             </div>
-            <hr/>
-            <div>
-                <div style="width: 50%;padding:0px;display: inline-block;float: left;">
-                    <strong>我</strong><br/>
-                    <img width="100%" src="images/3524476502.jpg" alt="me.jpg"/>
-                </div>
-                <div style="width: 50%;padding:0px;display: inline-block;float: left;">
-                    <strong>女友</strong><br/>
-                    <img width="100%" src="images/3633431437.jpg" alt="girl.jpg"/>
-                </div>
-                <span style="float: none"></span>
-            </div>
-
-            <strong>我们</strong><br/>
-            <img src="images/3772377354.jpg" alt="m.jpg"/>
-
         </section>
 
 
